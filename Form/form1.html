@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>   
+<div>
+    
+<form action="/action_page.php">
+    <h1>Personal Details</h1>
+    <label for="fname">Name:</label> <input type="text" id="fname" name="fname"><br><br>
+    <label for="psw"><b>Password: </b></label>
+    <input type="password" name="psw" required><br><br>
+    <label for="email"><b>E-mail Id: </b></label>
+    <input type="text" name="email" required><br><br>
+    <label for="gender">Gerder:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+    <label for="phone">Contact:</label>
+    <input type="tel" id="phone" name="phone"  pattern="[0-9]" required><br><br>
+    <h1>Educational Qualification</h1>
+    <label for="degree">Degree:</label>
+    <select name="status" id="status" class="form-control" required="">
+        <option value="">--- select status ---</option>
+        <option value="mba">MBA</option>
+     <option value="bba">BBA</option>
+    </select><br><br>
+    <label for="engineering">Engineering:</label>
+    <select name="status" id="status" class="form-control" required="">
+        <option value="">--- select status ---</option>
+        <option value="mba">MBA</option>
+     <option value="bba">BBA</option>
+    </select><br> <br>
+    <label for="hobbies">Hobbies:</label>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="hobbies1"> Chess</label>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="hobbies2"> Reading Books</label><br>
+    <h1>Address</h1>
+    <textarea id="address" name="address" style="width:300px;height:100px"></textarea><br><br>
+    <label for="myfile">attach resume</label>
+  <input type="file" id="myfile" name="myfile" multiple><br><br>
+  <input type="button" value="Button">
+  </form>
+  
+</div>
+</body>
+</html>
